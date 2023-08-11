@@ -6,3 +6,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+rand = "0.8.5"
+fast-exponentiation = { git = "https://github.com/hughdbrown/fast-exponentiation.git" }
+prime-factors = { git = "https://github.com/hughdbrown/prime-factors.git" }
+
+[dev-dependencies]
+prime-factors = { git = "https://github.com/hughdbrown/prime-factors.git" }
