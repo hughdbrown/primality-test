@@ -7,7 +7,7 @@ pub fn is_probably_prime(prime_cand: u32, tests: i32) -> bool {
     let power: u32 = prime_cand - 1;
     for _ in 0..tests {
         let n: u64 = prng.next_u64(1, prime_cand as u64);
-        let r = fast_exp_mod(n as i64, power as i64, prime_cand as i64);
+        let r = fast_exp_mod(n, power as u64, prime_cand as u64);
         if r != 1 {return false;}
     }
     true
